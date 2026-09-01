@@ -1,12 +1,7 @@
-// Variable que contiene la cantidad de dinero en dólares (USD)
-let usd = 100;
+let codigo = 'EST20260710';
 
-// Conversiones a cada moneda multiplicando por su respectiva tasa
-let eur = usd * 0.92; // Dólares a Euros
-let svc = usd * 8.75; // Dólares a Pesos Salvadoreños
-let gtq = usd * 7.80; // Dólares a Quetzales Guatemaltecos
+let codigo3Caracteres = codigo.slice(0,3);
+let codigo4Caracteres = codigo.slice(8,11)
 
-// Muesttra de cada conversión con su símbolo y moneda redondeada a 2 decimales
-console.log(`${usd} USD = ${eur.toFixed(2)} EUR`);
-console.log(`${usd} USD = ${svc.toFixed(2)} SVC`);
-console.log(`${usd} USD = ${gtq.toFixed(2)} GTQ`);
+ console.log(`los primeros 3 caracteres del codigo son  ${codigo3Caracteres}`);
+  console.log(`los ultimos 4 caracteres del codigo son  ${codigo4Caracteres}`);

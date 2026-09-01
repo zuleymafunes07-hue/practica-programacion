@@ -1,18 +1,7 @@
-// Declaración de variables iniciales (consumo y precio fijo por kWh)
-let kwhConsumidos = 250;
-let precioKwh = 0.15;
+let numero = 12345678;
 
-// 1. Cálculo del costo base
-let costoBase = kwhConsumidos * precioKwh;
+let numerotexto = numero.toString()
 
-// 2. Cálculo del impuesto del 10%
-let impuesto = costoBase * 0.10;
+console.log(`su variable es de tipo: ${typeof numerotexto}`);
 
-// 3. Cálculo del costo total a pagar
-let costoTotal = costoBase + impuesto;
-
-// Muestra del resumen de la factura en consola
-console.log(`Consumo: ${kwhConsumidos} kWh`);
-console.log(`Costo sin impuesto: $${costoBase.toFixed(2)}`);
-console.log(`Impuesto (10%): $${impuesto.toFixed(2)}`);
-console.log(`Costo total a pagar: $${costoTotal.toFixed(2)}`);
+console.log(`los primeros cuatro digitos son ${numerotexto.slice(0,4)}`);
